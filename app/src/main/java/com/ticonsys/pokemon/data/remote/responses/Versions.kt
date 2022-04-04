@@ -1,12 +1,22 @@
 package com.ticonsys.pokemon.data.remote.responses
 
+import com.google.gson.annotations.SerializedName
+
 data class Versions(
-    val generation-i: GenerationI,
-    val generation-ii: GenerationIi,
-    val generation-iii: GenerationIii,
-    val generation-iv: GenerationIv,
-    val generation-v: GenerationV,
-    val generation-vi: GenerationVi,
-    val generation-vii: GenerationVii,
-    val generation-viii: GenerationViii
+    @SerializedName("generation-i")
+    val generation1: GenerationI,
+    @SerializedName("generation-ii")
+    val generation2: GenerationIi,
+    @SerializedName("generation-iii")
+    val generation3: GenerationIii,
+    @SerializedName("generation-iv")
+    val generation4: GenerationIv,
+    @SerializedName("generation-v")
+    val generation5: GenerationV,
+    @SerializedName("generation-vi")
+    val generation6: GenerationVi,
+    @SerializedName("generation-vii")
+    val generation7: GenerationVii,
+    @SerializedName("generation-viii")
+    val generation8: GenerationViii
 )

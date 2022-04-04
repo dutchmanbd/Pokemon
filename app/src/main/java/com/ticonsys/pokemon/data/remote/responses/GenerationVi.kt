@@ -1,6 +1,10 @@
 package com.ticonsys.pokemon.data.remote.responses
 
+import com.google.gson.annotations.SerializedName
+
 data class GenerationVi(
-    val omegaruby-alphasapphire: OmegarubyAlphasapphire,
-    val x-y: XY
+    @SerializedName("omegaruby-alphasapphire")
+    val omegarubyAlphasapphire: OmegarubyAlphasapphire,
+    @SerializedName("x-y")
+    val xy: XY
 )
